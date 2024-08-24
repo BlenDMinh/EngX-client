@@ -1,104 +1,99 @@
-<p align='center'>
-  <img src='https://i.imgur.com/KVmyXyo.png' alt='Vital - Vite Starter Template' width='600'/>
-</p>
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-darkgreen?logo=springboot)](https://spring.io/projects/spring-boot)
+[![Java](https://img.shields.io/badge/Java-red?logo=openjdk)](https://www.java.com/en/)
+[![Vite](https://img.shields.io/badge/Vite-blue?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-darkblue?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+<div align='center'>
+  <h1>EngX</h1>
+  <h3>AI-based English Learning Platform</h3>
+  <img style='image-rendering: pixelated' src='https://github.com/user-attachments/assets/b71dacee-62e7-4d9c-a07e-999c3e18fe14' width=250 />
+  <h3>A project made for Sun* AI Hackathon 2023.</h3>
+</div>
 
-<p align='center'>
-Mocking up web app with <b>Vital</b><sup><em>(speed)</em></sup><br>
-</p>
+## Slide: 👉[![Canva](https://img.shields.io/badge/Canva-blue.svg?style=for-the-badge&logo=canva&logoColor=white)](https://www.canva.com/design/DAF53S2o7Wg/XMZ4zUqRPWFr39psx9KQGQ/view?utm_content=DAF53S2o7Wg&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+## Project Overview 🧐
 
-<br>
+EngX is an innovative website designed to enhance English learning through the power of Artificial Intelligence. It offers a unique and engaging approach to mastering the English language, making learning both fun and effective.
 
-<p align='center'>
-<a href="https://vital.josepvidal.dev">Live Demo</a>
-</p>
+## Project Description 🌟
 
-<br>
+EngX leverages advanced AI technologies to provide personalized learning experiences. Whether you're a beginner or looking to refine your skills, EngX adapts to your level and learning style. The platform includes interactive word learning modules and AI-generated games that make the learning process enjoyable and immersive.
 
-## Features
+### Main Features: 👌
 
-- ⚡️ [React 18](https://beta.reactjs.org/)
-- 🦾 TypeScript, of course
-- 🫀 [Vitest](https://vitest.dev/) - unitary testing made easy
-- 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS
-- 👑 [Atomic Design organization](https://bradfrost.com/blog/post/atomic-web-design/)
-- 🗂 [Absolute imports](https://github.com/vitejs/vite/issues/88#issuecomment-762415200)
-- 😃 [Hero icons](https://heroicons.com/)
-- ☁️ Deploy on Netlify, zero-config
+1. **Word Learning**: 
+   - Interactive lessons to expand your vocabulary.
+   - Personalized word lists based on your learning progress.
+   - Pronunciation guides and usage examples.
 
-### Coding Style
+2. **AI-Generated Game**:
+   - Fun and educational games created by AI to reinforce learning.
+   - Adaptive difficulty levels to match your proficiency.
+   - Real-time feedback and performance tracking.
 
-- [ESLint](https://eslint.org/) - configured for React/Hooks & TypeScript
-- [Prettier](https://prettier.io/)
+EngX is your go-to platform for a smarter, more engaging way to learn English. Join us and take your language skills to the next level!
 
-### Dev tools
+## Getting Started
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [Commit lint](https://github.com/conventional-changelog/commitlint) - helps your team adhering to a commit convention
-- [Netlify](https://www.netlify.com/) - zero-config deployment
+### 1. Server (Spring Boot)
 
-## Try it now!
+#### Prerequisites
+- Java Development Kit (JDK) 11 or higher
+- Maven
+- An IDE (e.g., IntelliJ IDEA, Eclipse)
 
-### GitHub Template
+#### Setup
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/BlenDMinh/EngX-server.git
+    cd EngX-server
+    ```
 
-[Create a repo from this template on GitHub](https://github.com/jvidalv/vital/generate).
+2. **Build the project**:
+    ```bash
+    mvn clean install
+    ```
 
-### Clone to local
+3. **Run the server**:
+    ```bash
+    mvn spring-boot:run
+    ```
 
-If you prefer to do it manually with the cleaner git history
+4. **Access the server**:
+    - The server will be running at `http://localhost:8080`.
 
-```bash
-npx degit jvidalv/vital my-vital-app
-cd my-vital-app
-yarn # If you don't have yarn installed, run: npm install -g yarn
-```
+### 2. Client (Vite)
 
-## Checklist
+#### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-When you use this template, try follow the checklist to update your info properly
+#### Setup
+1. **Navigate to the client directory**:
+    ```bash
+    git clone https://github.com/BlenDMinh/EngX-client.git
+    cd EngX-client
+    ```
 
-- [ ] Rename `name` and `author` fields in `package.json`
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the title in `index.html`
-- [ ] Change the favicon in `public`
-- [ ] Modify the manifest in `public`
-- [ ] Clean up the README's
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
+    or
+    ```bash
+    yarn install
+    ```
 
-And, enjoy :)
+3. **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+    or
+    ```bash
+    yarn dev
+    ```
 
-## Usage
+4. **Access the client application**:
+    - The client application will be running at `http://localhost:3000`.
 
-### Development
-
-Just run and visit http://127.0.0.1:3000/
-
-```bash
-yarn dev
-```
-
-### Build
-
-To build the App, run
-
-```bash
-yarn build
-```
-
-And you will see the generated file in `dist` that ready to be served.
-
-### Deploy on Netlify
-
-Go to [Netlify](https://app.netlify.com/start) and select your repository, `OK` along the way, and your App will be live in a minute.
-
-### Issues
-
-#### Husky
-
-If pre-commit hooks are not working be sure that you have installed husky: `husky install`.
-
-By default this command should be triggered after yarn/npm deps are installed.
-
-## Why
-
-I have created several React apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.
-
-So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. Feel free to tweak it or even maintains your own forks.
+Follow these steps to get your EngX project up and running. If you encounter any issues, feel free to reach out for help!
